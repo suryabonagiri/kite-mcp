@@ -1,0 +1,25 @@
+{
+  "name": "kite-mcp",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev:win": "set KITE_API_KEY=your_api_key&& set KITE_API_SECRET=your_api_secret&& set PORT=3000&& npm start",
+    "dev:unix": "KITE_API_KEY=your_api_key KITE_API_SECRET=your_api_secret PORT=3000 npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "kiteconnect": "^5.0.1",
+    "open": "^10.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/dotenv-safe": "^8.1.6",
+    "@types/node": "^22.15.21"
+  }
+}
